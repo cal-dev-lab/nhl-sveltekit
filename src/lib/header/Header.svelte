@@ -1,126 +1,51 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
+
+	let menuShow = false;
+		
+	function toggleNavbar() {
+		menuShow = !menuShow;
+	}
+
 </script>
 
-<header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
-	<nav data-sveltekit-prefetch>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li class:active={$page.url.pathname === '/'}>
-				<a href="/">Home</a>
-			</li>
-			<li class:active={$page.url.pathname === '/about'}>
-				<a href="/about">About</a>
-			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a href="/todos">Todos</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
-
-	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+<header class="sticky top-0 z-50 border-2 shadow-lg border-slate-900/[0.06] backdrop-filter backdrop-blur-lg bg-opacity-30">
+	<div class="flex flex-wrap">
+		<div class="w-full">
+			<nav class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white/50">
+				<div class="container max-w-5xl px-4 mx-auto flex flex-wrap items-center justify-between">
+					<div class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
+						<a class="text-3xl font-bold tracking-widest inline-block mr-4 py-2 whitespace-no-wrap text-gray-900 hover:drop-shadow-xl" href="/#">
+							nhl
+						</a>
+						<button class="text-gray-900 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" on:click={toggleNavbar}>
+							{#if menuShow === false}
+								<span>Open</span>
+							{:else}
+								<span>Close</span>
+							{/if}
+						</button>
+					</div>
+					<div class="lg:flex lg:flex-grow items-center {menuShow ? 'flex':'hidden'}">
+						<ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+							<li class="nav-item">
+								<a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-gray-900 hover:opacity-75" href="/#">
+									The Team
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-gray-900 hover:opacity-75" href="/#">
+									Statistics
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-gray-900 hover:opacity-75" href="/#">
+									Gallery
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
 	</div>
 </header>
-
-<style>
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li.active::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--accent-color);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 1em;
-		color: var(--heading-color);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--accent-color);
-	}
-</style>
