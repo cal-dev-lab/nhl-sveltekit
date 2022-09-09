@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'GroteskRemix';
+		src: local('GroteskRemix'), local('GroteskRemix'), local('groteskremix'), local('groteskremix'),
+			url('/fonts/grotesk/GroteskRemix-Regular.otf');
+		font-weight: normal;
+		font-display: swap;
+    }
+    @font-face {
+        font-family: 'GroteskRemix';
+		src: local('GroteskRemix Bold'), local('GroteskRemix-Bold'), local('groteskremix bold'), local('groteskremix-bold'),
+			url('/fonts/grotesk/GroteskRemix-Bold.otf');
+		font-weight: bold;
+		font-display: swap;
+    }
+    @font-face {
+        font-family: 'OpenSans-Light';
+		src: local('OpenSans-Light'),
+			url('/fonts/opensans/OpenSans-Light.ttf');
+		font-weight: light;
+		font-display: swap;
+    }
+}
