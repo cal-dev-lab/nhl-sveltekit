@@ -18,6 +18,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^4.5.0"
+		"@fontsource/fira-mono": "^4.5.0",
+		"motion": "^10.14.2",
+		"svelte-icons": "^2.1.0"
 	}
 }
