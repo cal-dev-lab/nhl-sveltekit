@@ -2,7 +2,7 @@
 	import Navbar from '$lib/Navbar/Navbar.svelte';
 	import '../app.css';
 	import { onMount } from "svelte";
-import Loader from '../lib/Components/Loader.svelte';
+	import Loader from '../lib/Components/Loader.svelte';
 
 	// For page loading
 	let isPageLoaded = false;
