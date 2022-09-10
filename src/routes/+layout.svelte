@@ -2,6 +2,7 @@
 	import Navbar from '$lib/Navbar/Navbar.svelte';
 	import '../app.css';
 	import { onMount } from "svelte";
+import Loader from '../lib/Components/Loader.svelte';
 
 	// For page loading
 	let isPageLoaded = false;
@@ -20,9 +21,7 @@
 </script>
 
 {#if !isPageLoaded}
-	<div id="load" class="grid h-screen items-center place-items-center mx-auto">
-		<img src="/tail-spin.svg" alt="Loader icon" />
-	</div>
+	<Loader />
 {/if}
 
 <Navbar />
