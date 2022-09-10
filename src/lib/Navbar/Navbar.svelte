@@ -1,7 +1,6 @@
 <script>
 
 	import FaPagelines from 'svelte-icons/fa/FaPagelines.svelte';
-	import FaWindowClose from 'svelte-icons/fa/FaWindowClose.svelte';
 
 	let menuShow = false;
 		
@@ -11,10 +10,10 @@
 
 </script>
 
-<header class="sticky top-0 z-50 border-2 shadow-sm border-slate-900/[0.06] backdrop-filter backdrop-blur-lg bg-opacity-30">
+<header class="sticky top-0 z-50 border-2 shadow-sm border-slate-900/[0.06] backdrop-filter backdrop-blur-lg bg-opacity-30 rounded-b-3xl sm:rounded-b-none">
 	<div class="flex flex-wrap">
 		<div class="w-full">
-			<nav class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white/50">
+			<nav class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white/50 rounded-b-3xl sm:rounded-b-none">
 				<div class="container max-w-7xl px-4 mx-auto flex flex-wrap items-center justify-between">
 					<div class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
 						<a class="font-grotesk text-3xl font-bold tracking-tighter flex mr-4 py-2 whitespace-no-wrap text-gray-900 border-b-2 border-green-600" href="/">
