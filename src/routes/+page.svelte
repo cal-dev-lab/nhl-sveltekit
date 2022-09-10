@@ -1,5 +1,5 @@
 <script>
-	import Hero from "../lib/Components/Hero/Hero.svelte"
+	import Hero from "../lib/Components/Hero/Hero.svelte";
 	import Plants from "../lib/Home/Plants/Plants.svelte";
 </script>
 
