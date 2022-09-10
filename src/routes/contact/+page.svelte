@@ -63,12 +63,14 @@ import Animate from "../../lib/Animate.svelte";
 						I agree to the terms and conditions.
 					</label>
 				</div>
-				<!-- Checkbox -->
-				<button
-					class="block bg-green-100 text-green-500 hover:bg-green-300 hover:text-white transition duration-300 w-full p-2 rounded"
+				<!-- Submit -->
+				<!-- Should be a button -->
+				<a
+					href="/"
+					class="block bg-green-100 text-green-500 hover:bg-green-300 hover:text-white transition duration-300 w-full p-2 rounded text-center"
 				>
 					Submit
-				</button>
+				</a>
 			</form>
 		</div>
 		<!-- END: Form -->
