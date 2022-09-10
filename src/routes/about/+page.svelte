@@ -5,6 +5,7 @@ import Animate from "../../lib/Animate.svelte";
 <svelte:head>
 	<title>Our story | Plantesk</title>
 	<meta name="description" content="The story of Plantesk" />
+	<link rel="canonical" href="https://plantesk.com/about/" />
 </svelte:head>
 
 <Animate>

@@ -6,6 +6,7 @@ import Animate from "../../lib/Animate.svelte";
 <svelte:head>
 	<title>Get in touch | Plantesk</title>
 	<meta name="description" content="Contact Plantesk" />
+	<link rel="canonical" href="https://plantesk.com/contact/" />
 </svelte:head>
 
 <Animate>
