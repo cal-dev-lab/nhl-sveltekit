@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Plantesk | Home</title>
+	<title>Home | Plantesk</title>
 	<meta name="description" content="Plantesk - The home of gardening." />
 	<link rel="canonical" href="https://xyz.xyz/" />
 </svelte:head>
