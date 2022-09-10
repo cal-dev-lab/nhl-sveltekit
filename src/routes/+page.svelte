@@ -1,6 +1,7 @@
 <script>
 	import Animate from "../lib/Animate.svelte";
 	import Hero from "../lib/Components/Hero/Hero.svelte";
+import Growing from "../lib/Home/Growing/Growing.svelte";
 	import Plants from "../lib/Home/Plants/Plants.svelte";
 import Watering from "../lib/Home/Watering/Watering.svelte";
 </script>
@@ -22,5 +23,8 @@ import Watering from "../lib/Home/Watering/Watering.svelte";
 		<!-- START: Watering -->
 		<Watering />
 		<!-- END: Watering -->
+		<!-- START: Growing -->
+		<Growing />
+		<!-- END: Growing -->
 	</section>
 </Animate>
