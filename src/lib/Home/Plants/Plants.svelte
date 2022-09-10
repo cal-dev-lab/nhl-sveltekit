@@ -71,7 +71,7 @@
             <!-- START: Iterate over data -->
             <!-- Props destructured -->
             {#each plants as {name, id, tag, synopsisB}}
-                <PlantCard title={name} id={id} tag={tag} synopsisHeading={name} synopsisBody={synopsisB} />
+                <PlantCard title={name} id={id} tag={tag} synopsisBody={synopsisB} />
             {/each}
             <!-- END: Iterate over data -->
         </div>
