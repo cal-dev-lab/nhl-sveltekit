@@ -70,7 +70,7 @@
         <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 xl:gap-x-8 mx-auto">
             <!-- START: Iterate over data -->
             <!-- Props destructured -->
-            {#each plants as {name, id, tag, synopsisH, synopsisB}}
+            {#each plants as {name, id, tag, synopsisB}}
                 <PlantCard title={name} id={id} tag={tag} synopsisHeading={name} synopsisBody={synopsisB} />
             {/each}
             <!-- END: Iterate over data -->
