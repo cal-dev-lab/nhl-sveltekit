@@ -16,7 +16,7 @@
 
 </script>
 
-<header class="sticky top-0 z-50 border-2 shadow-sm border-slate-900/[0.06] backdrop-filter backdrop-blur-lg bg-opacity-30 rounded-b-3xl sm:rounded-b-none">
+<header class="sticky top-0 z-50 border-2 shadow-sm border-slate-900/[0.06] backdrop-filter backdrop-blur-lg bg-opacity-30 rounded-b-3xl sm:rounded-b-none -pt-4">
 	<div class="flex flex-wrap">
 		<div class="w-full">
 			<nav class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white/50 rounded-b-3xl sm:rounded-b-none">
