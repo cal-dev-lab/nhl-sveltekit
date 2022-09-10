@@ -1,4 +1,7 @@
-<script></script>
+<script>
+import Hero from "../../lib/Components/Hero/Hero.svelte";
+
+</script>
 
 <svelte:head>
 	<title>The team | Plantesk</title>
@@ -6,9 +9,5 @@
 </svelte:head>
 
 <section>
-	<div class="grid h-screen place-items-center">
-		<h1 class="text-5xl">
-			Our Team
-		</h1>
-	</div>
+	<Hero title="Our Team" image="5" desc="Meet our team who make this site possible" />
 </section>
