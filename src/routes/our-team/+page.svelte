@@ -7,7 +7,7 @@
 <svelte:head>
 	<title>The team | Plantesk</title>
 	<meta name="description" content="The team at Plantesk" />
-	<link rel="canonical" href="https://plantesk.com/our-team/" />
+	<link rel="canonical" href="https://plantesk.netlify.app/our-team/" />
 </svelte:head>
 
 <Animate>
