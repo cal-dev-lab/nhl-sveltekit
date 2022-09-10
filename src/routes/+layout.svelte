@@ -19,13 +19,13 @@
 	});
 </script>
 
-<Navbar />
-
 {#if !isPageLoaded}
 	<div id="load" class="grid h-screen items-center place-items-center mx-auto">
 		<img src="/tail-spin.svg" alt="Loader icon" />
 	</div>
 {/if}
+
+<Navbar />
 
 <main>
 	<slot />
