@@ -3,6 +3,7 @@
 	import '../app.css';
 	import { onMount } from "svelte";
 	import Loader from '../lib/Components/Loader.svelte';
+import Footer from '../lib/Components/Footer/Footer.svelte';
 
 	// For page loading
 	let isPageLoaded = false;
@@ -29,3 +30,5 @@
 <main>
 	<slot />
 </main>
+
+<Footer />
