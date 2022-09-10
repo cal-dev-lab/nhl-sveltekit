@@ -9,7 +9,7 @@
 <style>
     @keyframes -global-from-right {
         0% {
-            transform: rotateX(50deg) translateX(100vw) skewX(-50deg);
+            transform: rotateX(50deg) translateX(200vw) skewX(-50deg);
             opacity: 1;
         }
         100% {
