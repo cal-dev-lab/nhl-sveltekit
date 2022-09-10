@@ -1,5 +1,5 @@
 <script>
-	import Hero from "../lib/Home/Hero/Hero.svelte"
+	import Hero from "../lib/Components/Hero/Hero.svelte"
 	import Plants from "../lib/Home/Plants/Plants.svelte";
 </script>
 
@@ -11,7 +11,7 @@
 
 <section>
 	<!-- START: Hero -->
-	<Hero />
+	<Hero title="Plantesk" image="3" desc="The home of plants" />
 	<!-- END: Hero -->
 	<!-- START: Plants -->
 	<Plants />
