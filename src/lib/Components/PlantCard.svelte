@@ -5,17 +5,17 @@
     /lib/Components/PlantCard.svelte
     *************/
 
-import Tag from "./Icons/Tag.svelte";
+    import Tag from "./Icons/Tag.svelte";
 
-    export let title;
-    export let tag;
-    export let synopsisHeading;
-    export let synopsisBody;
+    export let title;               // Input own title
+    export let tag;                 // Input own tag
+    export let synopsisHeading;     // Input own heading
+    export let synopsisBody;        // Input own body
 
 </script>
 
 <div class="relative group hover:scale-110 transition duration-300 drop-shadow-md hover:drop-shadow-xl">
-    <div class="p-8 absolute inset-0 z-10 bg-white text-center flex flex-col items-center justify-center opacity-0 rounded-3xl hover:opacity-100 bg-opacity-90 duration-300">
+    <div class="p-8 absolute inset-0 z-10 bg-green-50 text-center flex flex-col items-center justify-center opacity-0 rounded-3xl hover:opacity-100 bg-opacity-90 duration-300">
         <h3 class="text-2xl font-bold font-grotesk">
             {synopsisHeading}
         </h3>
