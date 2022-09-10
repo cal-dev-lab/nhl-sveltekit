@@ -4,8 +4,14 @@
 
 	let menuShow = false;
 		
-	function toggleNavbar() {
+	const toggleNavbar = () => {
 		menuShow = !menuShow;
+	}
+
+	const isOpen = () => {
+		if ( menuShow ) {
+			menuShow = !menuShow
+		}
 	}
 
 </script>
@@ -41,22 +47,17 @@
 					<div class="lg:flex lg:flex-grow items-center {menuShow ? 'flex':'hidden'}">
 						<ul class="flex flex-col lg:flex-row list-none lg:ml-auto gap-x-14 mr-4 my-8 lg:my-0">
 							<li class="nav-item hover:border-b-2 hover:border-green-600">
-								<a class="font-opensans tracking-wider py-4 flex items-center text-md leading-snug text-gray-900 " href="/">
+								<a on:click={isOpen} class="font-opensans tracking-wider py-4 flex items-center text-md leading-snug text-gray-900 " href="/">
 									Sanctuary
 								</a>
 							</li>
 							<li class="nav-item hover:border-b-2 hover:border-green-600">
-								<a class="font-opensans tracking-wider py-4 flex items-center text-md leading-snug text-gray-900 " href="/our-team">
+								<a on:click={isOpen} class="font-opensans tracking-wider py-4 flex items-center text-md leading-snug text-gray-900 " href="/our-team">
 									Our Team
 								</a>
 							</li>
 							<li class="nav-item hover:border-b-2 hover:border-green-600">
-								<a class="font-opensans tracking-wider py-4 flex items-center text-md leading-snug text-gray-900 " href="/about">
-									About
-								</a>
-							</li>
-							<li class="nav-item hover:border-b-2 hover:border-green-600">
-								<a class="font-opensans tracking-wider py-4 flex items-center text-md leading-snug text-gray-900 " href="/contact">
+								<a on:click={isOpen} class="font-opensans tracking-wider py-4 flex items-center text-md leading-snug text-gray-900 " href="/contact">
 									Contact
 								</a>
 							</li>
