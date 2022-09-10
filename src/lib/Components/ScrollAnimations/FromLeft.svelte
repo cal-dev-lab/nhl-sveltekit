@@ -3,7 +3,7 @@
 </script>
 
 <Saos animation={'from-left 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}>
-<slot></slot>
+<slot />
 </Saos>
 
 <style>
