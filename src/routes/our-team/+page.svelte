@@ -1,4 +1,5 @@
 <script>
+import Animate from "../../lib/Animate.svelte";
 import Hero from "../../lib/Components/Hero/Hero.svelte";
 
 </script>
@@ -8,6 +9,8 @@ import Hero from "../../lib/Components/Hero/Hero.svelte";
 	<meta name="description" content="The team at Plantesk" />
 </svelte:head>
 
-<section>
-	<Hero title="Our Team" image="5" desc="Meet our team who make this site possible" />
-</section>
+<Animate>
+	<section>
+		<Hero title="Our Team" image="5" desc="Meet our team who make this site possible" />
+	</section>
+</Animate>
