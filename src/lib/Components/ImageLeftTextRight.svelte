@@ -19,7 +19,7 @@
             <h2 class="z-50 text-5xl md:text-6xl lg:text-7xl font-grotesk font-bold text-center md:text-left">
                 {title}
             </h2>
-            <p class="text-justify mt-5 font-opensans tracking-widest">
+            <p class="text-justify text-xs mt-5 font-opensans leading-6 tracking-widest">
                 {desc}
             </p>
             <Button text="{btnText}" />
