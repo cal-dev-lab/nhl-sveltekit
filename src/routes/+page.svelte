@@ -9,7 +9,7 @@
 <svelte:head>
 	<title>Home | Plantesk</title>
 	<meta name="description" content="Plantesk - The home of gardening." />
-	<link rel="canonical" href="https://plantesk.com/" />
+	<link rel="canonical" href="https://plantesk.netlify.app/" />
 </svelte:head>
 
 <Animate>
