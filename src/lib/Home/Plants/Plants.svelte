@@ -1,9 +1,9 @@
 <script>
 
-    // The card to pass props to
-    import PlantCard from "./PlantCard.svelte"
+    // The component to pass props to/from
+    import PlantCard from "../../Components/PlantCard.svelte"
 
-    // Dummy data to iterate over
+    // Data to iterate over
     let plants = [
         {
             name: "Spider Plant", 
@@ -66,9 +66,12 @@
 <section>
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-10 sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 xl:gap-x-8 mx-auto">
+            <!-- START: Iterate over data -->
+            <!-- Props destructured -->
             {#each plants as {name, id, tag, synopsisB}}
                 <PlantCard title={name} id={id} tag={tag} synopsisHeading={name} synopsisBody={synopsisB} />
             {/each}
+            <!-- END: Iterate over data -->
         </div>
     </div>
 </section>
