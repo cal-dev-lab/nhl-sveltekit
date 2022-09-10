@@ -46,20 +46,22 @@
 </script>
 
 <div class="max-w-7xl mx-auto py-16 px-4 sm:py-10 sm:px-6 lg:px-8">
-    <FromRight>
         <div>
-            <Heading title="A bunch of lovely seedlings!" />
-            <p class="font-opensans text-xl text-center mb-20">What we do wouldn't be possible without this great bunch, they've really helped us grow! </p>
+            <FromRight>
+                <Heading title="A bunch of lovely seedlings!" />
+                <p class="font-opensans text-xl text-center mb-20">What we do wouldn't be possible without this great bunch, they've really helped us grow! </p>
+            </FromRight>
         </div>
-    </FromRight>
-    <FromLeft>
+    
         <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 xl:gap-x-8 mx-auto">
             <!-- START: Iterate over data -->
             <!-- Props destructured -->
             {#each people as {name, job, favPlant, id}}
+            <FromLeft>
                 <PersonCard name={name} id={id} job={job}  favPlant={favPlant} />
+            </FromLeft>
             {/each}
             <!-- END: Iterate over data -->
         </div>
-    </FromLeft>
+    
 </div>
