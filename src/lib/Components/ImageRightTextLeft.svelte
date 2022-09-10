@@ -21,6 +21,7 @@
             <img 
                 class="z-10 h-full aspect-auto object-cover  md:rounded-r-3xl md:rounded-bl-none rounded-b-3xl hover:scale-90 transition duration-300"
                 src={'https://plantesk.sirv.com/plantesk/ImageRightTextLeft/' + image + '.jpg'} alt="title" 
+                width="390"
             />
         </div>
     </div>
