@@ -1,7 +1,7 @@
 <script>
-import Animate from "../../lib/Animate.svelte";
-import Hero from "../../lib/Components/Hero/Hero.svelte";
-
+	import Origin from "../../lib/Our Team/Team/Team.svelte";
+	import Animate from "../../lib/Animate.svelte";
+	import Hero from "../../lib/Components/Hero/Hero.svelte";
 </script>
 
 <svelte:head>
@@ -12,5 +12,7 @@ import Hero from "../../lib/Components/Hero/Hero.svelte";
 <Animate>
 	<section>
 		<Hero title="Our Team" image="5" desc="Meet our team who make this site possible" />
+		<Origin />
 	</section>
+	
 </Animate>
