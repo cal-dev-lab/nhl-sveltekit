@@ -53,8 +53,7 @@ import Animate from "../../lib/Animate.svelte";
 				<!-- Comment -->
 				<div>
 					<p>Enter message</p>
-					<textarea class="w-full h-16 px-3 py-2 text-base text-gray-700 placeholder-gray-600 border rounded-lg focus:border-green-500">
-					</textarea>
+					<textarea  class="w-full h-16 px-3 py-2 text-base text-gray-700 placeholder-gray-600 border rounded-lg focus:border-green-500"></textarea>
 				</div>
 				<!-- Checkbox -->
 				<div class="flex items-center">
