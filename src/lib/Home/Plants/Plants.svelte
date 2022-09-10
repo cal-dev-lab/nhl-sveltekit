@@ -1,6 +1,7 @@
 <script>
 
-    // The component to pass props to/from
+    // Components to pass props to/from
+    import Heading from "../../Components/Heading.svelte"
     import PlantCard from "../../Components/PlantCard.svelte"
 
     // Data to iterate over
@@ -65,6 +66,7 @@
 
 <section>
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-10 sm:px-6 lg:max-w-7xl lg:px-8">
+        <Heading title="Top 9 house plants" />
         <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 xl:gap-x-8 mx-auto">
             <!-- START: Iterate over data -->
             <!-- Props destructured -->
