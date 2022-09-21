@@ -28,51 +28,51 @@ import Animate from "../../lib/Animate.svelte";
 					<span class="font-bold">We would love to hear from you.</span>
 				</p>
 				<!-- START: Form -->
-		<div class="w-full mt-5">
-			<form class="space-y-4 font-opensans" id="form">
-				<!-- Name -->
-				<div>
-					<input
-						type="text"
-						class="border-2 border-gray-200 w-full p-2 rounded outline-none focus:border-green-500"
-						id="user_name"
-						name="user_name"
-						placeholder="Your name"
-					/>
+				<div class="w-full mt-5">
+					<form class="space-y-4 font-opensans" id="form">
+						<!-- Name -->
+						<div>
+							<input
+								type="text"
+								class="border-2 border-gray-200 w-full p-2 rounded outline-none focus:border-green-500"
+								id="user_name"
+								name="user_name"
+								placeholder="Your name"
+							/>
+						</div>
+						<!-- Email -->
+						<div>
+							<input
+								type="email"
+								class="border-2 border-gray-200 w-full p-2 rounded outline-none focus:border-green-500"
+								id="user_email"
+								name="user_email"
+								placeholder="we.love@nature.com"
+							/>
+						</div>
+						<!-- Comment -->
+						<div>
+							<p>Enter message</p>
+							<textarea  class="w-full h-16 px-3 py-2 text-base text-gray-700 placeholder-gray-600 border rounded-lg focus:border-green-500"></textarea>
+						</div>
+						<!-- Checkbox -->
+						<div class="flex items-center">
+							<input type="checkbox" id="agree" />
+							<label for="agree" class="ml-2 text-sm">
+								I agree to the terms and conditions.
+							</label>
+						</div>
+						<!-- Submit -->
+						<!-- Should be a button -->
+						<a
+							href="/"
+							class="block bg-green-100 text-green-500 hover:bg-green-300 hover:text-white transition duration-300 w-full p-2 rounded text-center"
+						>
+							Submit
+						</a>
+					</form>
 				</div>
-				<!-- Email -->
-				<div>
-					<input
-						type="email"
-						class="border-2 border-gray-200 w-full p-2 rounded outline-none focus:border-green-500"
-						id="user_email"
-						name="user_email"
-						placeholder="we.love@nature.com"
-					/>
-				</div>
-				<!-- Comment -->
-				<div>
-					<p>Enter message</p>
-					<textarea  class="w-full h-16 px-3 py-2 text-base text-gray-700 placeholder-gray-600 border rounded-lg focus:border-green-500"></textarea>
-				</div>
-				<!-- Checkbox -->
-				<div class="flex items-center">
-					<input type="checkbox" id="agree" />
-					<label for="agree" class="ml-2 text-sm">
-						I agree to the terms and conditions.
-					</label>
-				</div>
-				<!-- Submit -->
-				<!-- Should be a button -->
-				<a
-					href="/"
-					class="block bg-green-100 text-green-500 hover:bg-green-300 hover:text-white transition duration-300 w-full p-2 rounded text-center"
-				>
-					Submit
-				</a>
-			</form>
-		</div>
-		<!-- END: Form -->
+				<!-- END: Form -->
 			</div>
 		</div>
 	</div>
