@@ -1,6 +1,6 @@
 <script>
-import Animate from "../../lib/Animate.svelte";
-
+	import Animate from "../../lib/Animate.svelte";
+    import Hero from "../../lib/Components/Hero/Hero.svelte";
 </script>
 
 <svelte:head>
@@ -10,6 +10,9 @@ import Animate from "../../lib/Animate.svelte";
 </svelte:head>
 
 <Animate>
+	<section class="text-white">
+        <Hero title="Let's talk" image="1" desc="Let's be like mycelium and connect with each other!" />
+    </section>
 	<div class="max-w-7xl mx-auto py-16 px-4 sm:py-10 sm:px-6 lg:px-8">
 		<div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 xl:gap-x-8 mx-auto justify-center items-center bg-white p-10 rounded-3xl">
 			<div class="w-full h-full z-10">
